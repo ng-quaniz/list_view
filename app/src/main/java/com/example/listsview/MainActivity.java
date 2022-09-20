@@ -42,11 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         lv.setAdapter(adapter);
     // click
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
 
                 lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -67,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
                         return false;
                     }
                 });
-            }}
+            }
+
 
             public void Xacnhanxoa(final int pos) {
                 AlertDialog.Builder alertDiaLog = new AlertDialog.Builder(MainActivity.this);
@@ -92,4 +89,4 @@ public class MainActivity extends AppCompatActivity {
             }
 
     }
-}
+
